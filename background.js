@@ -1,7 +1,7 @@
 /* global chrome */
 
 const SUPABASE_FUNC_URL = "https://qgkfnxqbavitpmtnutdp.supabase.co/functions/v1/analyze-reviews";
-const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFna2ZueHFiYXZpdHBtdG51dGRwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ4Nzk5NzQsImV4cCI6MjA5MDQ1NTk3NH0.ZuvIV8oNNHR8jxY1t5Cr8C3Gn95RhnCP3Jgu3jVwvwQ";
+const SUPABASE_ANON_KEY = [YOUR_ANON_KEY];
 
 // 1. 디바이스 고유 ID 생성 및 관리
 async function getOrCreateDeviceId() {
