@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "VibeSifter",
+  "version": "0.1.0",
+  "description": "Don't get fooled by photos; see the reality through aggregated truth.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["*://*/*"],
+  "action": {
+    "default_title": "VibeSifter"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["*://booking.com/*", "*://*.booking.com/*"],
+      "js": ["selectors.js", "content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
+
